@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://your-railway-url.up.railway.app/api",
+  baseURL: "https://devconnect-production.up.railway.app/api",
 });
 
 API.interceptors.request.use((req) => {
@@ -9,13 +9,10 @@ API.interceptors.request.use((req) => {
   const token = localStorage.getItem("token");
 
   if (token) {
-
     req.headers.Authorization = token;
-
   }
 
   return req;
-
 });
 
 export default API;
