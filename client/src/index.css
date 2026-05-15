@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+  background:
+    linear-gradient(
+      135deg,
+      #0f172a,
+      #111827,
+      #1e293b
+    );
+
+  min-height: 100vh;
+
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+
+  background: #3b82f6;
+
+  border-radius: 10px;
+}
+
+.glass {
+
+  background:
+    rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(18px);
+
+  border:
+    1px solid rgba(255,255,255,0.1);
+
+  box-shadow:
+    0 8px 32px rgba(0,0,0,0.3);
+}
+
+.card-hover {
+
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+
+  transform:
+    translateY(-6px) scale(1.01);
+
+  box-shadow:
+    0 10px 40px rgba(59,130,246,0.35);
+}
+
+.gradient-text {
+
+  background:
+    linear-gradient(
+      to right,
+      #60a5fa,
+      #a78bfa,
+      #f472b6
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.modern-input {
+
+  width: 100%;
+
+  padding: 16px;
+
+  border-radius: 14px;
+
+  border:
+    1px solid rgba(255,255,255,0.1);
+
+  background:
+    rgba(255,255,255,0.08);
+
+  color: white;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.modern-input:focus {
+
+  border-color: #3b82f6;
+
+  box-shadow:
+    0 0 15px rgba(59,130,246,0.4);
+}
+
+.modern-button {
+
+  padding: 14px 28px;
+
+  border-radius: 14px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+
+  cursor: pointer;
+}
+
+.modern-button:hover {
+
+  transform: scale(1.05);
+}
